@@ -11,6 +11,7 @@ import {
 import {
   aggregateFoundationModels,
   aggregateMethods,
+  benchmarkVersion,
   clinicalHighlights,
   csvPath,
   formatFoundationMetric,
@@ -84,7 +85,7 @@ const methodMetricGroups = [
   },
   {
     label: 'Image fidelity',
-    metrics: ['patch_rmse', 'patch_ssim', 'patch_psnr'],
+    metrics: ['patch_rmse', 'patch_ssim', 'patch_psnr', 'pixel_pcc'],
   },
   {
     label: 'Visual perception',
@@ -92,7 +93,7 @@ const methodMetricGroups = [
   },
   {
     label: 'Cell semantics',
-    metrics: ['cell_f1', 'cell_auc', 'cell_balanced_acc', 'cell_pcc'],
+    metrics: ['cell_f1', 'cell_auc', 'cell_auprc', 'cell_balanced_acc', 'cell_pcc'],
   },
 ] satisfies Array<{ label: string; metrics: DisplayMetricKey[] }>
 
@@ -217,7 +218,7 @@ const overviewStats = computed(() => [
   { label: 'Virtual methods', value: totalMethods.value },
   { label: 'PFM encoders', value: totalFoundationModels.value },
   { label: 'Patches', value: '611K' },
-  { label: 'Annotated cells', value: '87.3M' },
+  { label: 'Annotated cells', value: '85.6M' },
 ])
 
 function compareMetricValues(
@@ -362,6 +363,9 @@ function foundationBarWidth(value: number | null): string {
               H&E-to-protein prediction benchmark with separate leaderboards for virtual staining methods and
               pathology foundation models, evaluated across image fidelity, visual perception, cell semantics,
               and downstream clinical utility.
+            </p>
+            <p class="mt-3 text-sm font-semibold text-ink/60">
+              Version {{ benchmarkVersion }} &middot; results of the article
             </p>
           </div>
 
@@ -772,10 +776,11 @@ function foundationBarWidth(value: number | null): string {
           <div class="section-heading">
             <div>
               <p class="eyebrow">Clinical validation</p>
-              <h2 class="mt-2 text-3xl font-semibold">Virtual markers as complementary signals</h2>
+              <h2 class="mt-2 text-3xl font-semibold">What virtual markers carry</h2>
             </div>
             <p class="max-w-2xl text-sm leading-6 text-ink/65">
-              Downstream analyses compare H&E-only, virtual-marker-only, and fused H+V representations.
+              Survival and treatment-response analyses compare virtual markers alone, H&E features alone and their
+              combination, and test prespecified marker-level hypotheses in external cohorts.
             </p>
           </div>
 
@@ -798,7 +803,7 @@ function foundationBarWidth(value: number | null): string {
           Source paper: <span class="text-ink/70">Benchmarking virtual spatial proteomics prediction from
           histopathology images for clinical utility</span>.
         </p>
-        <p class="mt-1">Benchmark tables are derived from the paper's method summaries and foundation-model cell metrics.</p>
+        <p class="mt-1">Leaderboards show the final results of the article (HEPROBench v{{ benchmarkVersion }}).</p>
       </div>
     </footer>
   </div>

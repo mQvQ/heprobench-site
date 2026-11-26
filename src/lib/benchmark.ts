@@ -5,6 +5,8 @@ export type MetricKey =
   | 'cell_auc'
   | 'cell_f1'
   | 'cell_balanced_acc'
+  | 'cell_auprc'
+  | 'pixel_pcc'
   | 'patch_ssim'
   | 'patch_psnr'
   | 'patch_rmse'
@@ -21,25 +23,19 @@ export interface BenchmarkRow {
   train_dataset: string
   test_dataset: string
   stain_type: StainType
-  method_id: string
   method_display: string
   paradigm: string
-  run_cell: string
-  run_patch: string
   cell_pcc: number | null
-  cell_pcc_n_markers_total: number | null
-  cell_pcc_n_markers_finite: number | null
   cell_f1: number | null
   cell_auc: number | null
+  cell_auprc: number | null
   cell_balanced_acc: number | null
+  pixel_pcc: number | null
   patch_ssim: number | null
   patch_psnr: number | null
   patch_rmse: number | null
   patch_lpips: number | null
   patch_dists: number | null
-  file_cell_pcc_summary: string
-  file_cell_xgb_metrics: string
-  file_patch_summary: string
 }
 
 export interface FoundationCellRow {
@@ -102,14 +98,16 @@ export interface DatasetSummary {
   methods: number
 }
 
-export const csvPath = '/data/all_eval_metrics_complete_20260322.csv'
-export const foundationCsvPath = '/data/foundation_models_cell_metrics.csv'
+export const benchmarkVersion = '1.0.0'
+export const csvPath = '/data/heprobench_v1.0.0_methods.csv'
+export const foundationCsvPath = '/data/heprobench_v1.0.0_foundation_models.csv'
 
 export const metricDefinitions: MetricDefinition[] = [
   { key: 'overview', label: 'Overview score', shortLabel: 'Score', direction: 'higher', group: 'Overview' },
   { key: 'cell_pcc', label: 'Cell PCC', shortLabel: 'PCC', direction: 'higher', group: 'Cell semantics' },
   { key: 'cell_auc', label: 'Cell AUROC', shortLabel: 'AUROC', direction: 'higher', group: 'Cell semantics' },
   { key: 'cell_f1', label: 'Cell F1', shortLabel: 'F1', direction: 'higher', group: 'Cell semantics' },
+  { key: 'cell_auprc', label: 'Cell AUPRC', shortLabel: 'AUPRC', direction: 'higher', group: 'Cell semantics' },
   {
     key: 'cell_balanced_acc',
     label: 'Balanced accuracy',
@@ -117,6 +115,7 @@ export const metricDefinitions: MetricDefinition[] = [
     direction: 'higher',
     group: 'Cell semantics',
   },
+  { key: 'pixel_pcc', label: 'Pixel PCC', shortLabel: 'Pixel PCC', direction: 'higher', group: 'Image fidelity' },
   { key: 'patch_ssim', label: 'Patch SSIM', shortLabel: 'SSIM', direction: 'higher', group: 'Image fidelity' },
   { key: 'patch_psnr', label: 'Patch PSNR', shortLabel: 'PSNR', direction: 'higher', group: 'Image fidelity' },
   { key: 'patch_rmse', label: 'Patch RMSE', shortLabel: 'RMSE', direction: 'lower', group: 'Image fidelity' },
@@ -141,22 +140,22 @@ export const benchmarkStats = [
   { value: '106', label: 'protein markers' },
   { value: '785', label: 'paired slides' },
   { value: '611,205', label: 'patches' },
-  { value: '87.3M', label: 'annotated cells' },
+  { value: '85.6M', label: 'annotated cells' },
   { value: '8 + 15', label: 'methods + PFMs' },
 ]
 
 export const methodNotes = [
   {
     title: 'Dense regression leads the method benchmark',
-    body: 'Miphei-ViT ranks first overall in the base evaluation, with GIGATIME forming the strongest throughput-oriented dense baseline.',
+    body: 'Miphei-ViT ranks first overall, followed by GigaTIME-Reg; dense regression with paired supervision performed best.',
   },
   {
-    title: 'Patch fidelity is not cellular semantics',
-    body: 'Cell PCC, AUROC, and phenotyping metrics are kept visible because image-level similarity can overstate biological recovery.',
+    title: 'Overview score',
+    body: 'Each metric is averaged over datasets and min-max normalized across methods; image-level and cell-level metrics contribute equally.',
   },
   {
     title: 'Generalization remains difficult',
-    body: 'Out-of-distribution degradation is most visible in cell-level metrics, where marker recovery is harder than visual similarity.',
+    body: 'After transfer from CRC-CODEX to other cohorts, cell-level performance decreases for all methods.',
   },
 ]
 
@@ -173,22 +172,22 @@ export const foundationNotes = [
 
 export const clinicalHighlights = [
   {
-    label: 'Survival prediction',
-    title: 'Virtual markers improve fused risk models in selected TCGA cohorts',
-    value: '0.716',
-    caption: 'Best COAD C-index with GIGATIME H+V, compared with 0.656 for H&E alone.',
+    label: 'Survival',
+    title: 'Virtual markers carry prognostic information',
+    value: '0.67',
+    caption: 'C-index of Miphei-ViT virtual markers alone in TCGA-UCEC, close to 0.68 for UNI2 H&E features.',
   },
   {
-    label: 'Immunotherapy response',
-    title: 'Generated mIF adds predictive signal in gastric cancer',
-    value: '0.711',
-    caption: 'Best H+V AUC with GIGATIME, compared with 0.637 for H&E alone.',
+    label: 'External validation',
+    title: 'Virtual PD-L1 replicated in external cohorts',
+    value: 'HR 0.87',
+    caption: 'Per standard deviation in two external gastric cancer cohorts (1,047 patients; Holm-adjusted p = 0.004).',
   },
   {
-    label: 'Single marker',
-    title: 'Marker utility depends on both biology and generation fidelity',
-    value: '0.723',
-    caption: 'PANCK with GIGATIME produced the strongest single-marker AUC.',
+    label: 'Beyond H&E',
+    title: 'Virtual markers and H&E carry largely the same information',
+    value: '0/32',
+    caption: 'Comparisons in TCGA in which adding virtual markers to H&E features improved survival prediction of the deep model.',
   },
 ]
 
@@ -201,11 +200,11 @@ export const paradigmLabels: Record<string, string> = {
 
 const benchmarkNumericColumns = new Set<string>([
   'cell_pcc',
-  'cell_pcc_n_markers_total',
-  'cell_pcc_n_markers_finite',
   'cell_f1',
   'cell_auc',
+  'cell_auprc',
   'cell_balanced_acc',
+  'pixel_pcc',
   'patch_ssim',
   'patch_psnr',
   'patch_rmse',
@@ -395,9 +394,18 @@ export function aggregateMethods(rows: BenchmarkRow[]): MethodAggregate[] {
       .map((metricKey) => normalizedByMetric.get(metricKey)?.get(aggregate.method))
       .filter((value): value is number => value !== undefined && Number.isFinite(value))
 
+    const levelScore = (isCell: boolean) =>
+      average(
+        metricKeys
+          .filter((metricKey) => (getMetricDefinition(metricKey).group === 'Cell semantics') === isCell)
+          .map((metricKey) => normalizedByMetric.get(metricKey)?.get(aggregate.method) ?? null),
+      )
+    const levels = [levelScore(false), levelScore(true)].filter((value): value is number => value !== null)
+
     return {
       ...aggregate,
-      score: metricScores.length === 0 ? 0 : metricScores.reduce((sum, value) => sum + value, 0) / metricScores.length,
+      // Image-level and cell-level metrics contribute equally, as in the article.
+      score: levels.length === 0 ? (metricScores.length === 0 ? 0 : average(metricScores) ?? 0) : average(levels) ?? 0,
     }
   })
 }

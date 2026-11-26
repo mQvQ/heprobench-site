@@ -9,8 +9,8 @@ The site is organized into two separate leaderboards:
 
 ## Source Data
 
-- Benchmark CSV: `public/data/all_eval_metrics_complete_20260322.csv`
-- PFM cell metrics CSV: `public/data/foundation_models_cell_metrics.csv`
+- Benchmark CSV: `public/data/heprobench_v1.0.0_methods.csv`
+- PFM cell metrics CSV: `public/data/heprobench_v1.0.0_foundation_models.csv`
 
 The PFM leaderboard is generated from benchmark cell-level evaluation summaries.
 It ranks models by Cell PCC, Cell AUROC, and Cell F1.

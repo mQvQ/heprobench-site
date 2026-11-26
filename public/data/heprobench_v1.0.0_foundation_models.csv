@@ -1,0 +1,136 @@
+dataset,dataset_display,stain_type,model_id,model_display,family,pretraining,run_dir,cell_pcc,cell_pcc_markers_used,cell_auc,cell_f1,cell_f1_markers_used
+aml-codex,AML-CODEX,co-stained,dpt_chief,CHIEF,Vision-only,Patch encoder,,0.234156823045,54,0.5429829579314388,0.230444619616,40
+aml-codex,AML-CODEX,co-stained,dpt_conch,CONCH,Vision-language,Image-text alignment,,0.250383120932,54,0.5341285049153781,0.193615614436,40
+aml-codex,AML-CODEX,co-stained,dpt_conchv1_5,CONCH1.5,Vision-language,Image-text alignment,,0.279906357717,54,0.5457491861793433,0.183612054839,40
+aml-codex,AML-CODEX,co-stained,dpt_ctranspath,CTransPath,Vision-only,Self-supervised pathology encoder,,0.229322036451,54,0.5407877161410717,0.207568818007,40
+aml-codex,AML-CODEX,co-stained,dpt_gpfm,GPFM,Vision-only,Self-supervised pathology encoder,,0.27933291826,54,0.5219463330666376,0.194076671152,40
+aml-codex,AML-CODEX,co-stained,dpt_hoptimus0,H-Optimus-0,Vision-only,Self-supervised pathology encoder,,0.328224675374,54,0.5900909229169699,0.226006651314,40
+aml-codex,AML-CODEX,co-stained,dpt_h0-mini,H0-mini,Vision-only,Self-supervised pathology encoder,,0.307833330303,54,0.5664393536190132,0.212565943286,40
+aml-codex,AML-CODEX,co-stained,dpt_keep,KEEP,Vision-language,Knowledge-enhanced image-text alignment,,0.0856527203504,54,0.5553510186827685,0.256975744032,40
+aml-codex,AML-CODEX,co-stained,dpt_omiclip,OmiCLIP,Vision-omics,Vision-omics alignment,,0.205232152682,54,0.5299286058652732,0.184357660568,40
+aml-codex,AML-CODEX,co-stained,dpt_pathgen,PathGen-CLIP,Vision-language,Image-text alignment,,0.233411349336,54,0.5448056274396889,0.21047572761,40
+aml-codex,AML-CODEX,co-stained,dpt_phikonv2,Phikon-v2,Vision-only,Self-supervised pathology encoder,,0.21435751172,54,0.5173903731570361,0.207145923244,40
+aml-codex,AML-CODEX,co-stained,dpt_provgigapath,Prov-GigaPath,Vision-only,Self-supervised pathology encoder,,0.267056361669,54,0.5506508291084453,0.179181352379,40
+aml-codex,AML-CODEX,co-stained,dpt_uni,UNI,Vision-only,Self-supervised pathology encoder,,0.254745317095,54,0.5305049916162276,0.168893588809,40
+aml-codex,AML-CODEX,co-stained,dpt_univ2,UNI2,Vision-only,Self-supervised pathology encoder,,0.333442383681,54,0.5570190613566872,0.192179965806,40
+aml-codex,AML-CODEX,co-stained,dpt_virchow2,Virchow2,Vision-only,Self-supervised pathology encoder,,0.286052845276,54,0.5394002233217927,0.1658519629,40
+crc-codex,CRC-CODEX,co-stained,dpt_chief,CHIEF,Vision-only,Patch encoder,,0.19665378706,58,0.6888754549564087,0.395313719472,26
+crc-codex,CRC-CODEX,co-stained,dpt_conch,CONCH,Vision-language,Image-text alignment,,0.236484442917,58,0.7108378973608468,0.412653599981,26
+crc-codex,CRC-CODEX,co-stained,dpt_conchv1_5,CONCH1.5,Vision-language,Image-text alignment,,0.270958528181,58,0.7116372550049527,0.411637998365,26
+crc-codex,CRC-CODEX,co-stained,dpt_ctranspath,CTransPath,Vision-only,Self-supervised pathology encoder,,0.197808561343,58,0.6814297605043497,0.384039248164,26
+crc-codex,CRC-CODEX,co-stained,dpt_gpfm,GPFM,Vision-only,Self-supervised pathology encoder,,0.250632585029,58,0.6949989776734671,0.391492980134,26
+crc-codex,CRC-CODEX,co-stained,dpt_hoptimus0,H-Optimus-0,Vision-only,Self-supervised pathology encoder,,0.334372587752,58,0.7391857902663621,0.443668405827,26
+crc-codex,CRC-CODEX,co-stained,dpt_h0-mini,H0-mini,Vision-only,Self-supervised pathology encoder,,0.319614460884,58,0.7365010837968823,0.441098439223,26
+crc-codex,CRC-CODEX,co-stained,dpt_keep,KEEP,Vision-language,Knowledge-enhanced image-text alignment,,0.115715098476,58,0.6474250145752982,0.364609101649,26
+crc-codex,CRC-CODEX,co-stained,dpt_omiclip,OmiCLIP,Vision-omics,Vision-omics alignment,,0.170086905897,58,0.6304897081866798,0.338682434426,26
+crc-codex,CRC-CODEX,co-stained,dpt_pathgen,PathGen-CLIP,Vision-language,Image-text alignment,,0.213201599016,58,0.6673881214310451,0.369554377145,26
+crc-codex,CRC-CODEX,co-stained,dpt_phikonv2,Phikon-v2,Vision-only,Self-supervised pathology encoder,,0.216274739062,58,0.6686411219384425,0.370904024782,26
+crc-codex,CRC-CODEX,co-stained,dpt_provgigapath,Prov-GigaPath,Vision-only,Self-supervised pathology encoder,,0.268481141425,58,0.7082735784129851,0.414697629982,26
+crc-codex,CRC-CODEX,co-stained,dpt_uni,UNI,Vision-only,Self-supervised pathology encoder,,0.222574674983,58,0.6936254177347947,0.383299479122,26
+crc-codex,CRC-CODEX,co-stained,dpt_univ2,UNI2,Vision-only,Self-supervised pathology encoder,,0.322495437939,58,0.730356901223587,0.433342988443,26
+crc-codex,CRC-CODEX,co-stained,dpt_virchow2,Virchow2,Vision-only,Self-supervised pathology encoder,,0.25951418515,58,0.6967235147873739,0.393484003309,26
+hemit,HEMIT,co-stained,dpt_chief,CHIEF,Vision-only,Patch encoder,,0.756741900642,3,0.8254385880756714,0.637498856393,2
+hemit,HEMIT,co-stained,dpt_conch,CONCH,Vision-language,Image-text alignment,,0.784302479288,3,0.867576840244307,0.665376982221,2
+hemit,HEMIT,co-stained,dpt_conchv1_5,CONCH1.5,Vision-language,Image-text alignment,,0.779242417682,3,0.8127176670480906,0.634002959287,2
+hemit,HEMIT,co-stained,dpt_ctranspath,CTransPath,Vision-only,Self-supervised pathology encoder,,0.756604824313,3,0.808442224356995,0.639563534103,2
+hemit,HEMIT,co-stained,dpt_gpfm,GPFM,Vision-only,Self-supervised pathology encoder,,0.771439680961,3,0.8919423407656216,0.698493948054,2
+hemit,HEMIT,co-stained,dpt_hoptimus0,H-Optimus-0,Vision-only,Self-supervised pathology encoder,,0.749401931901,3,0.9012262186858956,0.706551437269,2
+hemit,HEMIT,co-stained,dpt_h0-mini,H0-mini,Vision-only,Self-supervised pathology encoder,,0.799058038773,3,0.9062083384315252,0.706260818903,2
+hemit,HEMIT,co-stained,dpt_keep,KEEP,Vision-language,Knowledge-enhanced image-text alignment,,0.697802925446,3,0.7083471577381805,0.554046525189,2
+hemit,HEMIT,co-stained,dpt_omiclip,OmiCLIP,Vision-omics,Vision-omics alignment,,0.709491681851,3,0.8281793178483603,0.630419236094,2
+hemit,HEMIT,co-stained,dpt_pathgen,PathGen-CLIP,Vision-language,Image-text alignment,,0.730532325237,3,0.8243846215187826,0.653223558698,2
+hemit,HEMIT,co-stained,dpt_phikonv2,Phikon-v2,Vision-only,Self-supervised pathology encoder,,0.777064458281,3,0.8760399681807214,0.683430609,2
+hemit,HEMIT,co-stained,dpt_provgigapath,Prov-GigaPath,Vision-only,Self-supervised pathology encoder,,0.778664270388,3,0.8597991170935612,0.672535189535,2
+hemit,HEMIT,co-stained,dpt_uni,UNI,Vision-only,Self-supervised pathology encoder,,0.794715861145,3,0.8841108480963333,0.69280876121,2
+hemit,HEMIT,co-stained,dpt_univ2,UNI2,Vision-only,Self-supervised pathology encoder,,0.749255363121,3,0.9109299593194222,0.7068218441,2
+hemit,HEMIT,co-stained,dpt_virchow2,Virchow2,Vision-only,Self-supervised pathology encoder,,0.787588882916,3,0.8895511756126759,0.692031724487,2
+mt-codex,MT-CODEX,co-stained,dpt_chief,CHIEF,Vision-only,Patch encoder,,0.423067338284,60,0.6610270875953705,0.239025985864,19
+mt-codex,MT-CODEX,co-stained,dpt_conch,CONCH,Vision-language,Image-text alignment,,0.365200464901,60,0.6858017479959483,0.248481885809,19
+mt-codex,MT-CODEX,co-stained,dpt_conchv1_5,CONCH1.5,Vision-language,Image-text alignment,,0.445610126842,60,0.6821383564929198,0.265321927919,19
+mt-codex,MT-CODEX,co-stained,dpt_ctranspath,CTransPath,Vision-only,Self-supervised pathology encoder,,0.361767173304,60,0.6476128797703484,0.247154059751,19
+mt-codex,MT-CODEX,co-stained,dpt_gpfm,GPFM,Vision-only,Self-supervised pathology encoder,,0.448477561905,60,0.6746040447755771,0.247669605176,19
+mt-codex,MT-CODEX,co-stained,dpt_hoptimus0,H-Optimus-0,Vision-only,Self-supervised pathology encoder,,0.465248399412,60,0.6931978591434305,0.282707709746,19
+mt-codex,MT-CODEX,co-stained,dpt_h0-mini,H0-mini,Vision-only,Self-supervised pathology encoder,,0.454714783147,60,0.6850269148594826,0.268937709026,19
+mt-codex,MT-CODEX,co-stained,dpt_keep,KEEP,Vision-language,Knowledge-enhanced image-text alignment,,0.256419231333,60,0.6210087657001854,0.23504239809,19
+mt-codex,MT-CODEX,co-stained,dpt_omiclip,OmiCLIP,Vision-omics,Vision-omics alignment,,0.317037253374,60,0.6568897347322121,0.214890687148,19
+mt-codex,MT-CODEX,co-stained,dpt_pathgen,PathGen-CLIP,Vision-language,Image-text alignment,,0.375425462393,60,0.6627412307016943,0.265893425611,19
+mt-codex,MT-CODEX,co-stained,dpt_phikonv2,Phikon-v2,Vision-only,Self-supervised pathology encoder,,0.374157620078,60,0.6545373445952867,0.218248432051,19
+mt-codex,MT-CODEX,co-stained,dpt_provgigapath,Prov-GigaPath,Vision-only,Self-supervised pathology encoder,,0.407201950826,60,0.6861708117895278,0.254557952409,19
+mt-codex,MT-CODEX,co-stained,dpt_uni,UNI,Vision-only,Self-supervised pathology encoder,,0.391532762149,60,0.6629092619400613,0.238420709635,19
+mt-codex,MT-CODEX,co-stained,dpt_univ2,UNI2,Vision-only,Self-supervised pathology encoder,,0.468489953062,60,0.7100899015650988,0.29762215034,19
+mt-codex,MT-CODEX,co-stained,dpt_virchow2,Virchow2,Vision-only,Self-supervised pathology encoder,,0.352199702445,60,0.6410232226802354,0.223944086092,19
+nsclc-imc,NSCLC-IMC,adjacent,dpt_chief,CHIEF,Vision-only,Patch encoder,,0.1354690593728865,28,0.5904545512976364,0.3311741886795283,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_conch,CONCH,Vision-language,Image-text alignment,,0.1531249831572377,28,0.6167658741277159,0.3570533740825276,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_conchv1_5,CONCH1.5,Vision-language,Image-text alignment,,0.1646406839407171,28,0.6208375745919661,0.3568983333974411,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_ctranspath,CTransPath,Vision-only,Self-supervised pathology encoder,,0.1414496131772485,28,0.5925395675568208,0.3322809026465885,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_gpfm,GPFM,Vision-only,Self-supervised pathology encoder,,0.1607352089369492,28,0.6232614254153742,0.3526357388958084,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_hoptimus0,H-Optimus-0,Vision-only,Self-supervised pathology encoder,,0.1985668639211147,28,0.6462943447167352,0.3893952243577279,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_h0-mini,H0-mini,Vision-only,Self-supervised pathology encoder,,0.1979557055787002,28,0.6374132744959785,0.3796475377300932,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_keep,KEEP,Vision-language,Knowledge-enhanced image-text alignment,,0.0753348850574973,28,0.5631753962731235,0.3249434446936322,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_omiclip,OmiCLIP,Vision-omics,Vision-omics alignment,,0.1059739664281533,28,0.5757624099584994,0.3149804155692455,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_pathgen,PathGen-CLIP,Vision-language,Image-text alignment,,0.1461301156413434,28,0.60806160753176,0.3479138404453603,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_phikonv2,Phikon-v2,Vision-only,Self-supervised pathology encoder,,0.1539549763562714,28,0.6140374261983946,0.343934573168117,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_provgigapath,Prov-GigaPath,Vision-only,Self-supervised pathology encoder,,0.1669787734683521,28,0.6262247790219886,0.3652095824185039,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_uni,UNI,Vision-only,Self-supervised pathology encoder,,0.1577058713029535,28,0.631016144219372,0.3661933128297922,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_univ2,UNI2,Vision-only,Self-supervised pathology encoder,,0.1843733899373637,28,0.6457327438388013,0.3828775394614218,14
+nsclc-imc,NSCLC-IMC,adjacent,dpt_virchow2,Virchow2,Vision-only,Self-supervised pathology encoder,,0.1750058863971487,28,0.6206204762693804,0.3624030986178191,14
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_chief,CHIEF,Vision-only,Patch encoder,,0.0494826293464,7,0.5588568960631709,0.205837595516,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_conch,CONCH,Vision-language,Image-text alignment,,0.16743933242,7,0.6041339889955541,0.250676544771,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_conchv1_5,CONCH1.5,Vision-language,Image-text alignment,,0.185965027615,7,0.6128839475571233,0.254157201398,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_ctranspath,CTransPath,Vision-only,Self-supervised pathology encoder,,0.117515953369,7,0.5710057705717236,0.222407212391,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_gpfm,GPFM,Vision-only,Self-supervised pathology encoder,,0.165906802978,7,0.6144860955813264,0.25317637152,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_hoptimus0,H-Optimus-0,Vision-only,Self-supervised pathology encoder,,0.22239365838,7,0.6265155063968256,0.277961546224,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_h0-mini,H0-mini,Vision-only,Self-supervised pathology encoder,,0.205196694458,7,0.629410841786006,0.27383268849,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_keep,KEEP,Vision-language,Knowledge-enhanced image-text alignment,,0.0189054114061,7,0.5573031394800757,0.210413508301,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_omiclip,OmiCLIP,Vision-omics,Vision-omics alignment,,0.110919380242,7,0.5686710352917943,0.203957810365,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_pathgen,PathGen-CLIP,Vision-language,Image-text alignment,,0.170051691751,7,0.6077368397183858,0.254923509436,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_phikonv2,Phikon-v2,Vision-only,Self-supervised pathology encoder,,0.123806644983,7,0.5971392435544105,0.231100744938,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_provgigapath,Prov-GigaPath,Vision-only,Self-supervised pathology encoder,,0.185940433001,7,0.6114946800212981,0.257619742515,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_uni,UNI,Vision-only,Self-supervised pathology encoder,,0.160132341155,7,0.6007893241991321,0.252848599614,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_univ2,UNI2,Vision-only,Self-supervised pathology encoder,,0.228753040781,7,0.6297382538330604,0.286305131845,5
+smu-crc-p1,CRC-mIHC-P1,co-stained,dpt_virchow2,Virchow2,Vision-only,Self-supervised pathology encoder,,0.190123731538,7,0.6154704951759518,0.25429859211,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_chief,CHIEF,Vision-only,Patch encoder,,0.102534078916,7,0.5923555572897045,0.0617822404959,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_conch,CONCH,Vision-language,Image-text alignment,,0.145901151898,7,0.6520329143094347,0.21519368175,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_conchv1_5,CONCH1.5,Vision-language,Image-text alignment,,0.165252961098,7,0.6366266579638616,0.18702963023,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_ctranspath,CTransPath,Vision-only,Self-supervised pathology encoder,,0.118553547109,7,0.6254690300882956,0.154265561327,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_gpfm,GPFM,Vision-only,Self-supervised pathology encoder,,0.164959932945,7,0.6299422859776634,0.200457520295,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_hoptimus0,H-Optimus-0,Vision-only,Self-supervised pathology encoder,,0.21280620952,7,0.6729000017236288,0.285642059999,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_h0-mini,H0-mini,Vision-only,Self-supervised pathology encoder,,0.197108356372,7,0.6544723723938353,0.217111316681,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_keep,KEEP,Vision-language,Knowledge-enhanced image-text alignment,,0.0137463662468,7,0.5549792862279859,0.0454832823462,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_omiclip,OmiCLIP,Vision-omics,Vision-omics alignment,,0.0859995316817,7,0.5941692733191611,0.0875703713863,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_pathgen,PathGen-CLIP,Vision-language,Image-text alignment,,0.156693679076,7,0.638683925649287,0.174213999397,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_phikonv2,Phikon-v2,Vision-only,Self-supervised pathology encoder,,0.133955993601,7,0.631914136092455,0.178518865572,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_provgigapath,Prov-GigaPath,Vision-only,Self-supervised pathology encoder,,0.176231850977,7,0.6637053075663731,0.239927537488,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_uni,UNI,Vision-only,Self-supervised pathology encoder,,0.144258786765,7,0.6223684800638155,0.160806426273,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_univ2,UNI2,Vision-only,Self-supervised pathology encoder,,0.214657381866,7,0.6792424917295949,0.286864107093,5
+smu-crc-p2,CRC-mIHC-P2,co-stained,dpt_virchow2,Virchow2,Vision-only,Self-supervised pathology encoder,,0.189054163759,7,0.6468552926261923,0.232899448901,5
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_chief,CHIEF,Vision-only,Patch encoder,,0.242941609781,11,0.6847711963561122,0.526773443411,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_conch,CONCH,Vision-language,Image-text alignment,,0.326890550412,11,0.7030474373752498,0.539595694336,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_conchv1_5,CONCH1.5,Vision-language,Image-text alignment,,0.361319037704,11,0.7331281464153643,0.559041723657,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_ctranspath,CTransPath,Vision-only,Self-supervised pathology encoder,,0.272382384696,11,0.6825941937810379,0.519938766893,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_gpfm,GPFM,Vision-only,Self-supervised pathology encoder,,0.324892899497,11,0.7066999126158547,0.539267595318,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_hoptimus0,H-Optimus-0,Vision-only,Self-supervised pathology encoder,,0.449144923818,11,0.7604724258500601,0.581468979331,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_h0-mini,H0-mini,Vision-only,Self-supervised pathology encoder,,0.431698817236,11,0.7586718367879541,0.578624002904,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_keep,KEEP,Vision-language,Knowledge-enhanced image-text alignment,,-0.0151029092557,11,0.631931848912742,0.484460758371,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_omiclip,OmiCLIP,Vision-omics,Vision-omics alignment,,0.221558065573,11,0.640691991789488,0.494821670844,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_pathgen,PathGen-CLIP,Vision-language,Image-text alignment,,0.33521552515,11,0.7104022146564509,0.540498259125,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_phikonv2,Phikon-v2,Vision-only,Self-supervised pathology encoder,,0.27451523444,11,0.6899191948649909,0.527649897432,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_provgigapath,Prov-GigaPath,Vision-only,Self-supervised pathology encoder,,0.378062676997,11,0.7454162606507168,0.568825094946,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_uni,UNI,Vision-only,Self-supervised pathology encoder,,0.28037284931,11,0.7007223384144999,0.537648964925,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_univ2,UNI2,Vision-only,Self-supervised pathology encoder,,0.459848899734,11,0.7752211589581197,0.589439446404,7
+smu-gc-mihc,STAD-mIHC,co-stained,dpt_virchow2,Virchow2,Vision-only,Self-supervised pathology encoder,,0.369917012268,11,0.7415745305532495,0.564897169635,7
+spatch-codex,SPATCH-CODEX,adjacent,dpt_chief,CHIEF,Vision-only,Patch encoder,,0.225687069798,17,0.5536930862631592,0.303660913686,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_conch,CONCH,Vision-language,Image-text alignment,,0.260326327616,17,0.6252255592587125,0.374446024284,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_conchv1_5,CONCH1.5,Vision-language,Image-text alignment,,0.286706228562,17,0.663473835999621,0.408567816377,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_ctranspath,CTransPath,Vision-only,Self-supervised pathology encoder,,0.211112171022,17,0.5294100707809739,0.316762025439,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_gpfm,GPFM,Vision-only,Self-supervised pathology encoder,,0.291212081909,17,0.658827972436839,0.383188846635,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_hoptimus0,H-Optimus-0,Vision-only,Self-supervised pathology encoder,,0.305044536941,17,0.6543935586711261,0.405544307769,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_h0-mini,H0-mini,Vision-only,Self-supervised pathology encoder,,0.305138472318,17,0.6645756789544168,0.388517546929,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_keep,KEEP,Vision-language,Knowledge-enhanced image-text alignment,,0.111889304271,17,0.3666788175013285,0.203151299176,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_omiclip,OmiCLIP,Vision-omics,Vision-omics alignment,,0.142062046979,17,0.477598069198025,0.268990066746,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_pathgen,PathGen-CLIP,Vision-language,Image-text alignment,,0.234077746948,17,0.5864922720854825,0.37884283212,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_phikonv2,Phikon-v2,Vision-only,Self-supervised pathology encoder,,0.281949180076,17,0.5908513673390465,0.349401391226,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_provgigapath,Prov-GigaPath,Vision-only,Self-supervised pathology encoder,,0.298315025269,17,0.6750874543937381,0.40576158524,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_uni,UNI,Vision-only,Self-supervised pathology encoder,,0.305946597195,17,0.6261969443368869,0.382140243253,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_univ2,UNI2,Vision-only,Self-supervised pathology encoder,,0.316518955152,17,0.6235313221609412,0.397629805964,9
+spatch-codex,SPATCH-CODEX,adjacent,dpt_virchow2,Virchow2,Vision-only,Self-supervised pathology encoder,,0.304658885147,17,0.6856131000857665,0.405203364233,9
